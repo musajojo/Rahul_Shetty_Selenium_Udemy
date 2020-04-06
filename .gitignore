@@ -3,3 +3,7 @@
 target
 .DS_Store
 test-output
+
+chromedriver.exe
+geckodriver.exe
+IEDriverServer.exe
