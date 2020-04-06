@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class S06_01 {
     public static void main(String[] args) {
+
         WebDriver driver =new ChromeDriver();
         driver.get("http://facebook.com"); //URL in the browser
 //driver.findElement(By.className("inputtext")).sendKeys("helloworld");
