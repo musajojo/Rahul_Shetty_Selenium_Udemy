@@ -18,7 +18,11 @@ public class S07_01 {
 
         // Inorder to validate the XPath put the below in the Chrome Console and search it:
         //      $x("//div[@class='a4bIc']/div/div[2]/input")
+        // div and div[1] work the same, no difference as far as I can tell --> Personal note.
+
+        System.out.println(driver.findElement(By.xpath("//div[@id='gb']/div[2]/div/div/div/div[1]/a")).getText());
         driver.findElement(By.xpath("//div[@class='RNNXgb']/div/div[2]/input")).sendKeys("Hello");
+        driver.quit();
 
         // This type of XPath is to be built by taking note of the different elements in the HTML,
         // until a path is created to the desired destination.
