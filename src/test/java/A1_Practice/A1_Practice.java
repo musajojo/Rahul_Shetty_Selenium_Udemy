@@ -16,20 +16,18 @@ public class A1_Practice {
         driver.get(googleURL);
 
         /*
-        $x("//div[@id='gb']")
-        //div[@id='gb']/div[2]/div/div/div/div/a/class --- Wrong
-        //div[@id='gb']/div[2]/div/div/div[1]/div[1]/a --- Correct
+        --------------------------------------------------------
 
-        /html/body/div/div[3]/div[2]/div/div/div[1]/div[1]/a
-              //div[@id='gb']/div[2]/div/div/div[1]/div[1]/a/class
 
-              //div[@id='gb']/div[2]/div/div/div/div/a
-              and
-              //div[@id='gb']/div[2]/div[1]/div[1]/div[1]/div[1]/a
+        //*[@id="viewport"]
+        //*[@id="hptl"]/a[2]
+        /html/body/div/div[3]/div[1]/a[2]
 
+
+         --------------------------------------------------------
          */
 
-        System.out.println(driver.findElement(By.xpath("//div[@id='gb']/div[2]/div/div/div/div/a")).getText());
+        System.out.println(driver.findElement(By.xpath("//div[@id='viewport']/div[3]/div/a[2]")).getText());
         Thread.sleep(1000);
         driver.quit();
 

@@ -20,7 +20,11 @@ public class S07_01 {
         //      $x("//div[@class='a4bIc']/div/div[2]/input")
         // div and div[1] work the same, no difference as far as I can tell --> Personal note.
 
+        // Store link
+        System.out.println(driver.findElement(By.xpath("//div[@id='viewport']/div[3]/div/a[2]")).getText());
+        // Gmail link
         System.out.println(driver.findElement(By.xpath("//div[@id='gb']/div[2]/div/div/div/div[1]/a")).getText());
+        // Search box
         driver.findElement(By.xpath("//div[@class='RNNXgb']/div/div[2]/input")).sendKeys("Hello");
         driver.quit();
 
