@@ -11,6 +11,8 @@ public class S07_02 {
         driver.manage().window().maximize();
         String googlrURL = "http://google.com";
         driver.get(googlrURL);
+        driver.manage().window().maximize();
+
         /*
        // Difference between Relative and Absolute Xpath
 
