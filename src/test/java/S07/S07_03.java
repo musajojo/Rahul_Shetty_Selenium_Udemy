@@ -1,5 +1,5 @@
 package S07;
-// Section 7, Video 42
+// Section 7, Video 43
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,7 +22,6 @@ public class S07_03 {
 
        We can also traverse from child to parent in Xpath by using the following->  parent::ul
        example: "//*[@id='content']/ul/li[5]/parent::ul"
-
          ------------------------------------------------------*/
         // A/B Testing
         System.out.println(driver.findElement(By.xpath("//*[@id=\'content\']/ul/li[1]")).getText());
@@ -35,9 +34,9 @@ public class S07_03 {
         Thread.sleep(2000);
         driver.navigate().back();
 
-        //Broken Images
+        //Broken Images --> This is the child Xpath
         System.out.println(driver.findElement(By.xpath("//*[@id='content']/ul/li[5]")).getText());
-       // Parent - This is the whole list of ul's
+       // Parent - This is the whole list of ul's --> Here I used the Broken Images child Xpath to find the parent ul
         System.out.println(driver.findElement(By.xpath("//*[@id='content']/ul/li[5]/parent::ul")).getText());
 
         driver.quit();
