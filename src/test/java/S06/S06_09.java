@@ -26,7 +26,7 @@ public class S06_09 {
         // name = attribute
         // email = value
 
-         //  //tagName[@attribute='value'] --> This is the Syntax for Xpath
+        //  //tagName[@attribute='value'] --> This is the Syntax for Xpath
         //   //input[@value='Log In']  --> You can select any attribute that is unique
         //   $x("//input[@value='Log In']")
 
