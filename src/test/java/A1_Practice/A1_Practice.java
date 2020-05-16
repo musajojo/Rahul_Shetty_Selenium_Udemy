@@ -1,8 +1,6 @@
 package A1_Practice;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class A1_Practice {
@@ -23,13 +21,11 @@ public class A1_Practice {
 
          --------------------------------------------------------*/
 
-        WebElement googleStore = driver.findElement(By.xpath("//div[@id='viewport']/div[3]/div/a[2]"));
-        Thread.sleep(1000);
-        System.out.println(googleStore.getText());
-        Thread.sleep(1000);
-        googleStore.click();
 
-        driver.quit();
+
+
+
+
 
 
     }
