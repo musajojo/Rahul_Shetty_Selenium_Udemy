@@ -1,5 +1,5 @@
 package S08;
-// Section 8, Video 57,
+// Section 8, Video 57 (1of2),
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
