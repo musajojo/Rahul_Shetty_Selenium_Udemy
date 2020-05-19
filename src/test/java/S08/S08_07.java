@@ -55,5 +55,6 @@ public class S08_07 {
         Assert.assertTrue(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
 
         driver.quit();
+
     }
 }
