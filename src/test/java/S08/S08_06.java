@@ -47,5 +47,6 @@ public class S08_06 {
         System.out.println(driver.findElements(By.cssSelector("input[type='checkbox']")).size());
 
         driver.quit();
+
     }
 }
