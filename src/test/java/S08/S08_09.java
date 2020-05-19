@@ -32,5 +32,6 @@ public class S08_09 {
         driver.findElement(By.className("ui-datepicker-today")).click();
 
         driver.quit();
+
     }
 }
