@@ -55,5 +55,6 @@ public class S08_08 {
         Assert.assertEquals(driver.findElement(By.id("divpaxinfo")).getText(), "5 Adult");
 
         driver.quit();
+
     }
 }
