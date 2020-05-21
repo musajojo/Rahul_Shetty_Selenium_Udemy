@@ -2,7 +2,9 @@ package A1_Practice;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class A1_Practice {
     public static void main(String[] args) throws InterruptedException {
@@ -16,20 +18,14 @@ public class A1_Practice {
         String rsAcadamyDdPrcticeURL = "https://rahulshettyacademy.com/dropdownsPractise/";
         String spiceJetURL = "https://www.spicejet.com/";
         String makeMyTripURL = "https://www.makemytrip.com/?ccde=us";
-        driver.get(spiceJetURL);
+        driver.get(googleURL);
         driver.manage().window().maximize();
 
         /*--------------------------------------------------------
 
          --------------------------------------------------------*/
 
-        System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
-
-        driver.findElement(By.id("ctl00_mainContent_chk_IndArm")).click();
-        System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
-
-        Assert.assertTrue(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
-        System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
+        driver.findElement(By.id("")).click();
 
 
 
