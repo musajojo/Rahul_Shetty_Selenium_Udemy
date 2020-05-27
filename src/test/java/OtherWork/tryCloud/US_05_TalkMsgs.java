@@ -24,7 +24,7 @@ public class US_05_TalkMsgs {
         // Click on New Conversations box
         driver.findElement(By.id("select2-chosen-3")).click();
         Thread.sleep(2000);
-        // Nnversationew Public Co
+        // New Public Conversation 
         driver.findElement(By.xpath("//*[@id=\'select2-results-3\']/li[2]")).click();
         Thread.sleep(1000);
         // New Message
