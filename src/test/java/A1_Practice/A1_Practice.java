@@ -2,6 +2,9 @@ package A1_Practice;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -9,7 +12,10 @@ import org.testng.annotations.Test;
 public class A1_Practice {
     public static void main(String[] args) throws InterruptedException {
 
-        WebDriver driver = new ChromeDriver();
+        //WebDriver driver = new ChromeDriver();
+        WebDriver driver = new FirefoxDriver();
+        //WebDriver driver = new EdgeDriver();
+        //WebDriver driver = new InternetExplorerDriver();
         String googleURL = "http://google.com";
         String facebookURL = "http://facebook.com";
         String saleforceLoginURL = "https://login.salesforce.com/";
